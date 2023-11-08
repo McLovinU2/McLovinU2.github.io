@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+                <!-- Header-->
+        <header class=" d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Project 2: Predicting house prices</h1>
+                <p class="lead mb-5">This project was done on the Bouston house dataset. Which consists of 163 columns and 1,460 data rows. The goal of this project was to clean the dataset and to make a house price prediction machine learning model. I would do this by finding the best correlating features and the best fitting machine learning model. </p>
+            </div>
+        </header>
+                <!-- About-->
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Cleaning the dataset</h2>
+                        <p class="lead mb-5">
+                            For the data cleaning I handled Null values, removed outliers, applied different fill methods and formatted datatypes.</p>
+                        <h2>Exploring the dataset</h2>
+                        <p class="lead mb-5">
+                            I did a exploratory data analysis, with the goal being to understand the data better. Image 1 & 2 show some of my visualizations.</p>
+                        <img src="assets/img/plot1.png"
+                                 alt="Image 1: comparing optimzation performance"
+                            align="center">
+                        <p><em>Image 1: SalePrice distribution with quality colour</em> </p>
+                        <img src="assets/img/plot2.png"
+                            align="center">
+                        <p><em>Image 2: Boxplot of the overall quality</em> </p>
+                        <h2>Feature Selection </h2>
+                        <p class="lead mb-5"> In order to find the best features for the machine learning model. I made a Pearson's R heatmap matrix. From this heatmap I selected the highest scoring features. See image 3 for the heatmap.  </p>
+                        <img src="assets/img/heatmap.png"
+                            align="center">
+                        <p><em>Image 3: Pearson's correlation heatmap</em></p>
+                        <h2>Modelling</h2>
+                        <p class="lead mb-5">I applied three regression machine learning models in combination with the heatmap features. The three models where a linear regression, random forest and extreme gradient boosting model. Each models performance was measured using root mean squared error (RSME)</p>
+                        <h4>Results</h4>
+                            <li>Linear Regression: 0.668 RMSE</li>
+                            <li>Random Forest: 0.174 RMSE</li>
+                            <li>Extreme Gradient Boosting: 0.135 RMSE</li>
+                        <br>
+                        <p class="lead mb-5">To achieve these scores I applied, one-hot encoding, hyperparamater tuning and k-fold cross validation techniques.</p>
+                        <h2>Take-aways</h2>
+                            <li>Data cleaning/exploring</li>
+                            <li>Feature selection</li>
+                            <li>Applying advanced regression models</li>
+                            <li>Model optimization</li>
+                    </div>
+                </div>
+            </div>
+        </section>
